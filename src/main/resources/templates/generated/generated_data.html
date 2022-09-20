@@ -7,7 +7,7 @@
   <meta name="author" content="ThemeBucket">
   <link rel="shortcut icon" href="#" type="image/png">
 
-  <title>Dynamic Table</title>
+  <title>生成数据</title>
 
   <!--dynamic table-->
   <link href="js/advanced-datatable/css/demo_page.css" rel="stylesheet" />
@@ -33,76 +33,18 @@
         <!-- header section end-->
 
         <!-- page heading start-->
-        <div class="page-heading">
-            <h3>
-                Dynamic Table
-            </h3>
-            <ul class="breadcrumb">
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Data Tables</a>
-                </li>
-                <li class="active"> Dynamic Table </li>
-            </ul>
-        </div>
-        <div class="panel-body">
-            <div class="adv-table">
-                <form class="searchform" th:action="@{generated_data_select}">
-                    <input type="text" class="form-control" name="count" placeholder="请输入要生成的条数">
-                    <input type="submit" value="提交">
-                </form>
-            </div>
-        </div>
-        <!-- page heading end-->
+<!--        <div class="page-heading">-->
 
-        <!--body wrapper start-->
-        <div class="wrapper">
-            <div class="row">
-                <div class="col-sm-12">
-                    <section class="panel">
-                        <header class="panel-heading">
-                            Dynamic Table
-                            <span class="tools pull-right">
-                <a href="javascript:;" class="fa fa-chevron-down"></a>
-                <a href="javascript:;" class="fa fa-times"></a>
-             </span>
-                        </header>
-                        <div class="panel-body">
-                            <div class="adv-table">
-                                <table  class="display table table-bordered table-striped" id="dynamic-table">
-                                    <thead>
-                                    <tr>
-                                        <th>账号名</th>
-                                        <th>密码</th>
-                                        <th>操作</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr class="gradeX" th:each="user:${users}">
-                                        <td th:text="${user.username}">Trident</td>
-                                        <td th:text="${user.password}">Internet
-                                            Explorer 4.0</td>
-                                        <td>Win 95+</td>
-                                        <td class="center hidden-phone">4</td>
-                                        <td class="center hidden-phone">X</td>
-                                    </tr>
-                                    </tbody>
-                                    <tfoot>
-                                    <tr>
-                                        <th>Rendering engine</th>
-                                        <th>Browser</th>
-                                        <th>Platform(s)</th>
-                                        <th class="hidden-phone">Engine version</th>
-                                        <th class="hidden-phone">CSS grade</th>
-                                    </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                        </div>
-
-                    </section>
+<!--            <ul class="breadcrumb">-->
+<!--                <li>-->
+<!--                    <a href="#">Dashboard</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">Data Tables</a>-->
+<!--                </li>-->
+<!--                <li class="active"> Dynamic Table </li>-->
+<!--            </ul>-->
+<!--        </div>-->
                 </div>
             </div>
 
